@@ -1,0 +1,47 @@
+---
+const year = new Date().getFullYear()
+---
+
+<footer>
+    <span>{year} Sara Cernadas. All rights reserved.</span>
+   
+</footer>
+
+<style>
+    footer {
+        font-family: lato;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        width: calc(100% - 40px);
+        border-top: 1px solid #80776;
+        text-align: center;
+        padding: 20px;
+        color:#80776e ;
+    }
+
+    footer > ul {
+        font-family: lato;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 30px;
+        padding: 0;
+    }
+
+    footer > ul > li > a {
+        color:#bbb5af ;
+        transition: all .3s;
+    }
+
+
+
+    @media screen and (max-width: 700px) {
+        footer {
+            justify-content: center;
+        }
+    }
+</style>
