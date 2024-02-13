@@ -2,21 +2,27 @@
 
 <form id="form" class="contact">
 
-      <label for="name"></label>
-		  <input id="name" type="text" placeholder="NAME">
-      <label for="email"></label>
-		  <input id="email" type="text" placeholder="E-MAIL">
-      <label for="message"></label>
-		  <textarea id="" placeholder="MESSAGE"></textarea>
+      <label for="name">NAME</label>
+		  <input id="name" type="text" placeholder="ENTER YOUR NAME">
+      <label for="email">EMAIL</label>
+		  <input id="email" type="text" placeholder="ENTER YOUR EMAIL ADRESS">
+      <label for="message">MESSAGE</label>
+		  <textarea id="" placeholder="HI! HOW CAN I HELP YOU?"></textarea>
+      <label for="submit">GO</label>
       <input id="submit" type="submit" value="GO!">
   
 </form>
 
 <style>
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+label {
+  display: none;
+}
+
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
    color: #635c56;
+   opacity: 80%;
   font-size: 0.875em;
 }
 
@@ -26,6 +32,7 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   color: #635c56;
+  opacity: 80%;
   font-size: 0.875em;
 }
 
@@ -44,6 +51,7 @@ input:focus::placeholder, textarea::focus:placeholder {
 
 input::-ms-placeholder, textarea::-ms-placeholder {
   color: #635c56;
+  opacity: 80%;
   font-size: 0.875em;
 }
 
@@ -78,6 +86,7 @@ input:hover::placeholder, textarea:hover::placeholder {
 
 input:hover:focus::placeholder, textarea:hover:focus::placeholder {
   color: #635c56;
+  opacity: 80%;
 }
 
 input:hover::placeholder, textarea:hover::placeholder {
@@ -90,12 +99,14 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   background: #e2dedb;
-  color:#635c56 ;
+  color:#635c56;
 }
 
 header {
+  font-family: 'Lato';
+  font-weight: 700;
   position: relative;
   margin: 100px 0 25px 0;
   font-size: 2.3em;
@@ -107,10 +118,11 @@ header {
   position: relative;
   width: 500px;
   margin: 50px auto 100px auto;
+  
 }
 
 input {
-  font-family: 'Lato', sans-serif;
+  
   font-size: 0.875em;
   width: 470px;
   height: 50px;
@@ -118,10 +130,12 @@ input {
   
   background: transparent;
   outline: none;
-  color:#635c56 ;
+  color:#49433c ;
+  opacity: 80%;
   
   border: solid 1px #b3aca7;
   border-bottom: none;
+  
   
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -143,8 +157,8 @@ textarea {
   
   background: transparent;
   outline: none;
-  
-  color: #726659;
+  border-top: none;
+  color: #635c56;
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
   
@@ -165,7 +179,7 @@ textarea:hover {
   width: 502px;
   
   padding: 0;
-  margin: -5px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
@@ -176,6 +190,7 @@ textarea:hover {
   
   border: solid 1px #b3aca7;
   border-top: none;
+  
 }
 
 #submit:hover {
